@@ -3,9 +3,23 @@
   box-shadow: 0 3px 6px #666666;
 }
 
-.navbar-brand,
+.navbar-brand {
+  font-size: 1.5em;
+  color: "#666666";
+  padding-right: 8px;
+}
+
 a,
 i {
-  font-size: 1.3em;
-  color: #666666;
+  padding-top: 7px;
+  font-size: 1.2em;
+  color: "#666666";
+}
+
+.nav-link {
+  margin-right: 8px;
+}
+
+i {
+  margin-right: 5px;
 }
