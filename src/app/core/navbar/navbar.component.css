@@ -1,0 +1,11 @@
+.navbar {
+  background: #cafcfb;
+  box-shadow: 0 3px 6px #666666;
+}
+
+.navbar-brand,
+a,
+i {
+  font-size: 1.3em;
+  color: #666666;
+}

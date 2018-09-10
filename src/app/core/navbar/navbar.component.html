@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md">
+
+  <a class="navbar-brand" href="#">Jesse Soldat</a>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fas fa-bars"></i>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="mobile">
+    <!-- left hand links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/JesseSoldat" target="_blank">
+          <i class="fab fa-github fa-1x"></i>
+          <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/jesse-soldat-126544110" target="_blank"> <i class="fab fa-linkedin fa-1x"></i></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#"> <i class="fas fa-envelope fa-1x"></i></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#"> <i class="fas fa-phone fa-1x"></i></a>
+      </li>
+
+    </ul>
+    <!-- right hand links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item mr-4" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink="/">Home</a>
+      </li>
+      <li class="nav-item mr-4" routerLinkActive="active">
+        <a routerLink="/about">About</a>
+      </li>
+      <li class="nav-item mr-4" routerLinkActive="active">
+        <a routerLink="/work">Work</a>
+      </li>
+      <li class="nav-item mr-4" routerLinkActive="active">
+        <a routerLink="/skills">Skills</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>

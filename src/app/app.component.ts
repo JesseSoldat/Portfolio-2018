@@ -1,6 +1,8 @@
-
 import { Component } from "@angular/core";
 import { SwUpdate } from "@angular/service-worker";
+import { Router, NavigationEnd } from "@angular/router";
+
+import { filter } from "rxjs/operators";
 
 @Component({
   selector: "app-root",
@@ -8,13 +10,19 @@ import { SwUpdate } from "@angular/service-worker";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = 'jesseSoldat';
+  title = "jesseSoldat";
 
-
-  constructor(updates: SwUpdate) {
+  constructor(updates: SwUpdate, router: Router) {
+    // reload page if there is a SW update
     updates.available.subscribe(event => {
- 
       updates.activateUpdate().then(() => document.location.reload());
     });
+
+    // scroll to top of page on every route change
+    router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0);
+      });
   }
 }
