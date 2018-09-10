@@ -1,5 +1,20 @@
 # JesseSoldat
 
+// Generate
+ng g s serviceName
+ng g m moduleName --routing
+
+// service works
+ng add @angular/pwa
+ng build --prod --build-optimizer
+http-server ./dist/portfolio2018 -o
+// libraries
+https://www.npmjs.com/package/ng-scrollreveal
+npm install --save-dev @types/scrollreveal
+"scripts": [
+"./node_modules/scrollreveal/dist/scrollreveal.js"
+],
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
 ## Development server
