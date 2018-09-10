@@ -3,6 +3,7 @@
 // Generate
 ng g s serviceName
 ng g m moduleName --routing
+ng g c componentName --module moduleName
 
 // service works
 ng add @angular/pwa
