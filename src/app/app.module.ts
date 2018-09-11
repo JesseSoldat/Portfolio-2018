@@ -13,8 +13,7 @@ import { SharedModule } from "./shared/shared.module";
 import { ServiceWorkerModule } from "@angular/service-worker";
 // ENV -----------------------
 import { environment } from "../environments/environment";
-// RXJS Operators -------------
-import "./shared/rxjs-operators";
+
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],

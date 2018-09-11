@@ -1,0 +1,22 @@
+<div class="workImgWrapper mt-5">
+
+  <div class="container-fluid" [ngsReveal]="{ reset: true, duration: 1000, origin: 'left', distance: '300px'}">
+
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-3">
+        <div class="list-group">
+          <a [routerLink]="'five-words'" routerLinkActive="active" class="list-group-item text-center">Five Words</a>
+
+          <a [routerLink]="'around-world'" routerLinkActive="active" class="list-group-item text-center">Around The World</a>
+
+          <a [routerLink]="'movie-buddy'" routerLinkActive="active" class="list-group-item text-center">Movie Buddy</a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+  </div>
+</div>

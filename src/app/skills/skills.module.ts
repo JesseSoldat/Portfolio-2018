@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
 
-import { SkillsRoutingModule } from './skills-routing.module';
+// Modules
+import { SharedModule } from "../shared/shared.module";
+import { SkillsRoutingModule } from "./skills-routing.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    SkillsRoutingModule
-  ],
+  imports: [SharedModule, SkillsRoutingModule],
   declarations: []
 })
-export class SkillsModule { }
+export class SkillsModule {}

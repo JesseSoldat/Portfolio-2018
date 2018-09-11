@@ -4,16 +4,13 @@
 }
 
 .navbar-brand {
-  font-size: 1.5em;
-  color: "#666666";
+  font-size: 1.4em;
   padding-right: 8px;
 }
 
 a,
 i {
-  padding-top: 7px;
   font-size: 1.2em;
-  color: "#666666";
 }
 
 .nav-link {

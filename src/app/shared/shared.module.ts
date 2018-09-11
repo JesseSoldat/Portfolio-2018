@@ -1,11 +1,12 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+
+// 3rd Party --------------------
+import { NgsRevealModule } from "ng-scrollreveal";
 
 @NgModule({
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, NgsRevealModule.forRoot()],
   declarations: [],
-  exports: [CommonModule, FormsModule, RouterModule]
+  exports: [CommonModule, NgsRevealModule]
 })
 export class SharedModule {}

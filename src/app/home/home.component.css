@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+.homeImgWrapper {
+  background: url(../../assets/img/space.jpg);
+  background-repeat: repeat;
+  height: 100%;
+}
+/* sm md lg */
+.profileImg {
+  width: 100%;
+  margin: 100px auto 400px;
+}
+
+/* xs */
+.profileImgSmall {
+  width: 90%;
+  display: block;
+  margin: 100px auto 200px;
+}

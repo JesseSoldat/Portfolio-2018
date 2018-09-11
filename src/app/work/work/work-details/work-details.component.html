@@ -1,0 +1,22 @@
+<div class="projectContainer">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="projectTitle">{{project?.title}}</h2>
+      <a href={{project?.url}} target="_blank">View Live </a>
+      <span><p>|</p></span>
+      <a href={{project?.github}} target="_blank"> View Code</a>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-5">
+      <p class="projectDescription">{{project?.description}}</p>
+    </div>
+    <div class="col-xs-12 col-sm-7 imgWrapper">
+      <img class="projectImg" src="../../../../assets/img/{{project?.img}}">
+    </div>
+  </div>
+
+
+</div>
