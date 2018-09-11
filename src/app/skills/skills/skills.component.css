@@ -1,0 +1,36 @@
+.skillsImgWrapper {
+  background: url(../../../assets/img/skills.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
+  background-color: black;
+}
+
+.skillsContent {
+  background: white;
+  padding: 3%;
+  box-shadow: 3px 3px 10px black;
+}
+
+.skillsTitle {
+  display: inline-block;
+  margin-right: 3%;
+  vertical-align: middle;
+}
+.skillsImg {
+  display: inline-block;
+  width: 30px;
+  padding-top: 10px;
+}
+
+.lgList {
+  display: table;
+  margin: 0 auto;
+}
+
+li {
+  font-size: 18px;
+  line-height: 2;
+}

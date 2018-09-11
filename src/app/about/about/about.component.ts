@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from "@angular/core";
+
+declare let jQuery: any;
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: "app-about",
+  templateUrl: "./about.component.html",
+  styleUrls: ["./about.component.css"]
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
+  isActive = "iowa";
 
-  constructor() { }
-
-  ngOnInit() {
+  changeBackground(img, e) {
+    e.preventDefault();
+    this.isActive = img;
+    jQuery(".aboutImgWrapper").css(
+      "background-image",
+      `url(../../../assets/img/${img}.jpg)`
+    );
   }
-
 }
