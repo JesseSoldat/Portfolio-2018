@@ -4,6 +4,11 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 900px;
-  background-color: black;
+  height: 1200px;
+  background-color: #09090c;
+}
+
+.list-group a {
+  padding: 40px 0;
+  font-size: 1.3em;
 }

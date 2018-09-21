@@ -1,9 +1,9 @@
 .projectContainer {
+  min-height: 700px;
   background: #cafcfb;
   padding: 2% 4%;
   border-radius: 1%;
   box-shadow: 3px 3px 3px black;
-  margin-bottom: 200px;
 }
 
 .projectTitle {
@@ -33,6 +33,6 @@ span {
 }
 
 .projectDescription {
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 1.3em;
+  line-height: 2em;
 }
