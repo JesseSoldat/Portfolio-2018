@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-inverse fixed-top">
 
-  <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Jesse Soldat</a>
+  <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Jesse
+    Soldat</a>
 
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile" aria-controls="navbarCollapse"
@@ -21,13 +22,13 @@
         <a class="nav-link" href="https://www.linkedin.com/in/jesse-soldat-126544110" target="_blank"> <i class="fab fa-linkedin"></i></a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#"> <i class="fas fa-envelope"></i></a>
+      <li class="nav-item" (click)="onContact('email')">
+        <a class="nav-link"> <i class="fas fa-envelope"></i></a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#"> <i class="fas fa-phone"></i></a>
-      </li>
+      </li> -->
 
     </ul>
     <!-- right hand links -->

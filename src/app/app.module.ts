@@ -13,7 +13,8 @@ import { SharedModule } from "./shared/shared.module";
 import { ServiceWorkerModule } from "@angular/service-worker";
 // ENV -----------------------
 import { environment } from "../environments/environment";
-
+// Services
+import { DataStoreService } from "./services/data-store.service";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -26,7 +27,7 @@ import { environment } from "../environments/environment";
       enabled: environment.production
     })
   ],
-  providers: [],
+  providers: [DataStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
