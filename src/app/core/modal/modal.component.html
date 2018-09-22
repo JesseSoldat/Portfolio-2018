@@ -10,9 +10,12 @@
       <div class="modal-body">
         <p>jessesoldat@gmail.com</p>
       </div>
+      <input hidden value="jessesoldat@gmail.com" type="text" #text>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Copy to Clipboard</button>
+        <button type="button" class="btn btn-primary" [class.btn-success]="isCopied" [ngxClipboard]="text"
+          (cbOnSuccess)="onCopy()">Copy to Clipboard</button>
       </div>
     </div>
   </div>
