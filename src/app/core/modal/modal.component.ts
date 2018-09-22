@@ -13,7 +13,7 @@ declare let jQuery: any;
 })
 export class ModalComponent implements OnInit {
   showModal$: Observable<boolean>;
-  text = "jessesoldat@gmail.com";
+  type = "jessesoldat@gmail.com";
   isCopied = false;
 
   constructor(private dataStoreService: DataStoreService) {}
@@ -23,6 +23,7 @@ export class ModalComponent implements OnInit {
       .pipe(
         tap(shouldShow => {
           if (shouldShow) {
+            this.isCopied = false;
             jQuery("#myModal").modal("show");
           }
         })

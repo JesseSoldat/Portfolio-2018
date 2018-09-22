@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -16,6 +17,7 @@ import { ClipboardModule } from "ngx-clipboard";
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
     BrowserAnimationsModule,
     ClipboardModule
   ],

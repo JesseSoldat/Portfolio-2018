@@ -8,13 +8,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>jessesoldat@gmail.com</p>
+        <input type="text" [value]="type" readonly class="form-control" #inputTarget>
       </div>
-      <input hidden value="jessesoldat@gmail.com" type="text" #text>
+
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" [class.btn-success]="isCopied" [ngxClipboard]="text"
+        <button type="button" class="btn btn-primary" [class.btn-success]="isCopied" [ngxClipboard]="inputTarget"
           (cbOnSuccess)="onCopy()">Copy to Clipboard</button>
       </div>
     </div>
