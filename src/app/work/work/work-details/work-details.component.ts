@@ -9,6 +9,7 @@ interface Project {
   img: string;
   url: string;
   github: string;
+  tech: string;
   description: string;
 }
 
