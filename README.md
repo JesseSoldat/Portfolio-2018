@@ -16,6 +16,9 @@ npm install --save-dev @types/scrollreveal
 "./node_modules/scrollreveal/dist/scrollreveal.js"
 ],
 
+// surge
+C:\Users\jlab\CODE\Angular\Portfolio\Portfolio-2018\dist\jesseSoldat
+jesse-soldat.surge.sh
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
 ## Development server
